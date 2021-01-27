@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{ VitrineService } from '../../services/vitrine.service';
+
 
 @Component({
   selector: 'app-vitrine',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VitrineComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _vitrineService: VitrineService
+
+  ) { }
+
+  tipoJoiasList:any=[];
 
   ngOnInit(): void {
+    this.getTipoJoias();
+  }
+
+  getTipoJoias(){
+    this._vitrineService.GetTipoJoiasList().subscribe(response =>{
+      this.tipoJoiasList = response;
+    })
   }
 
 }

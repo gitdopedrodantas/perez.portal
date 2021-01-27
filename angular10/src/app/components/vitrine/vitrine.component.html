@@ -1,1 +1,8 @@
 <p>vitrine works!</p>
+<mat-list>
+    <mat-list-item *ngFor="let tipo of tipoJoiasList">
+        <h1 matLine> {{tipo.id}}</h1>
+        <h1 marLine> {{tipo.descricao}}</h1>
+    </mat-list-item>
+</mat-list>
+<router-outlet></router-outlet>
