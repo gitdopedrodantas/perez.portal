@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import{ VitrineService } from '../../services/vitrine.service';
 
-
 @Component({
   selector: 'app-vitrine',
   templateUrl: './vitrine.component.html',
