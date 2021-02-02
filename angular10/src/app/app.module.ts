@@ -8,7 +8,8 @@ import { VitrineService } from './services/vitrine.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatListModule } from '@angular/material/list';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FormsModule,
     ReactiveFormsModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [VitrineService],
   bootstrap: [AppComponent]
