@@ -2,11 +2,8 @@
     padding: 1px;
 }
 
-.header{
-    position:fixed;
-    margin-bottom: 30px;
-}
-
 .body{
-   margin-top: calc(7% + 30px);
+    position: relative;
+   margin-top: calc(7% + 35px);
+   z-index: 10;
 }

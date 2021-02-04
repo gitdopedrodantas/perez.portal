@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'halimunregular';
+    src: url('./halimun_400-webfont.woff2') format('woff2'),
+         url('./halimun_400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
