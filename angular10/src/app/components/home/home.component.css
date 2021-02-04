@@ -1,4 +1,9 @@
+.home-body{
+    display: flex;
+    justify-content: center;
+}
+
 .home-image{
-    min-width: 100px;
-    min-height: 100px;
+    max-width:90%;
+    max-height:100%;
 }

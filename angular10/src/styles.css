@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; }
+html, body { height: 100%; max-width: 100% !important; overflow-x: hidden;}
+body { margin: 0; max-width: 100%; }
 
 
 

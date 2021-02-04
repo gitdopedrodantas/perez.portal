@@ -4,6 +4,8 @@
     height: 15%;
     width: 100%;
     background-color: #ffffff;
+    position: fixed;
+    top: 0px;
 }
 
 .navbar{
@@ -59,8 +61,8 @@
     bottom:0;
     width:180%;
     height:25px;
-    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 40%);
-    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 40%);
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
     margin-left: -39.3%;
     margin-top: 10px;
 }

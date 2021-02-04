@@ -1,0 +1,12 @@
+.all{
+    padding: 1px;
+}
+
+.header{
+    position:fixed;
+    margin-bottom: 30px;
+}
+
+.body{
+   margin-top: calc(7% + 30px);
+}

@@ -10,7 +10,6 @@ export class VitrineComponent implements OnInit {
 
   constructor(
     private _vitrineService: VitrineService
-
   ) { }
 
   tipoJoiasList:any=[];
