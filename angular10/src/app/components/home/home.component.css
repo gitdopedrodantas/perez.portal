@@ -37,7 +37,7 @@
 .home-content-container{
     display: flex;
     justify-content: center;
-    width: 75%;
+    width: 85%;
     
 }
 
@@ -94,3 +94,47 @@
 #text-content-2{
     margin-left: -110px;
 }
+
+.home-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-height: 300px;
+}
+
+.footer-board{
+    width: 85%;
+}
+
+.footer-board:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    z-index: 99;
+    width:180%;
+    height:25px;
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
+    margin-left: -39.3%;
+    margin-top: 10px;
+}
+
+.footer-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-title-content{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
