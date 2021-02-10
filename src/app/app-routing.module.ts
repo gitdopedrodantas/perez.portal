@@ -15,6 +15,7 @@ const routes: Routes = [
   {path: 'tornozeleiras', component:VitrineComponent},
   {path: 'manutencao', component:VitrineComponent},
   {path: 'informacoes', component:VitrineComponent}
+
 ];
 
 @NgModule({

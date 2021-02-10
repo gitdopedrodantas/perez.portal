@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     width: 85%;
-    
+    margin-bottom: 25px;
 }
 
 .container-img{
@@ -97,33 +97,41 @@
 
 .home-footer{
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
+    justify-content: -webkit-center;
+    text-align: -webkit-center;
     padding-top: 50px;
     min-height: 300px;
+    z-index: 5;
+    position: relative;
 }
 
 .footer-board{
-    width: 85%;
+    display: block;
+    justify-content: center;
+    justify-content: -webkit-center;
+    width: 50%;
 }
 
 .footer-board:after{
     content:"";
     position: absolute;
-    bottom:0;
+    bottom:-25;
     z-index: 99;
     width:180%;
     height:25px;
-    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
-    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 45%);
-    margin-left: -39.3%;
-    margin-top: 10px;
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 35%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.15), rgba(150, 150, 150, 0.0) 35%);
+    margin-left: -88%;
+    margin-top: 20px;
 }
 
 .footer-title{
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .footer-title-content{
@@ -134,6 +142,128 @@
     line-height: 1.15;
     color: #4f4f50;
     -webkit-font-smoothing: antialiased;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-and-text{
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    text-align: -webkit-center;
+    position: relative;
+    max-width: 150px;
+}
+
+.icon{
+    font-size: 50px;
+    color: #4f4f50;
+    margin-bottom: 60px;
+    margin-left: -20px;
+}
+
+#icon-2{
+    width: 46px;
+    height: 46px;
+    margin-bottom: 36px;
+    margin-right: -20px;
+}
+
+.icon-title{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+.icon-text{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin-left: -6px;
+}
+
+.home-goodbye-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home-goodbye{
+    margin-top: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.instagram-link{
+    text-decoration: none;
+    color: #4f4f50;
+}
+
+.goodbye-text-content{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+.instagram-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 31%;
+    min-height: 90px;
+}
+
+.instagram-button-content{
+    width: 100%;
+    min-height: 60px;
+    height: auto;
+    background-color: #df9a7f;
+    display: flex;
+    justify-content: center;
+}
+
+.button-content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-icon{
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+
+.instagram-icon-text{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.15;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin-top: 6px;
 }
 
 
