@@ -1,9 +1,14 @@
-.all{
-    padding: 1px;
-}
-
 .body{
     position: relative;
    margin-top: calc(7% + 35px);
    z-index: 10;
+}
+
+.footer{
+    background-color: #4f4f50;
+    width: 102%;
+    border-bottom: #4f4f50;
+    border-left: #4f4f50;
+    border-top: #4f4f50;
+    border-style: solid;
 }
