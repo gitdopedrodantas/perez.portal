@@ -1,0 +1,68 @@
+.footer{
+    background-color: #4f4f50;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+
+.footer-information{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.footer-information-title-and-text{
+    width: 250px;
+}
+
+.text{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    margin-top: 2px;
+}
+
+.title-content{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.text-content{
+    font-weight: 10;
+    font-size: 16px;
+}
+
+.whatsapp-info{
+    display: flex;
+    width: 85%;
+    text-align: initial;
+    text-align: -webkit-lef;
+    height: 80px;
+    align-items: center;
+}
+
+.whatsapp-icon{
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+}
+
+.phone-number{
+    height: 60px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.whatsapp-wrapper-number{
+    margin-left: 10px;
+    height: 60px;
+    align-self: flex-end;
+}

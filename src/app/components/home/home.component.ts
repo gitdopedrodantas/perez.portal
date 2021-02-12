@@ -8,18 +8,18 @@ import {DomSanitizer} from '@angular/platform-browser';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  constructor(private matIconRegistry:MatIconRegistry, private domSanitzer:DomSanitizer,) { 
+  constructor(private matIconRegistry:MatIconRegistry, private domSanitzer:DomSanitizer) { 
     this.matIconRegistry.addSvgIcon(
     'quality',
-    this.domSanitzer.bypassSecurityTrustResourceUrl('../../../assets/icons/quality-assurance-icon.svg')
+    this.domSanitzer.bypassSecurityTrustResourceUrl('assets/icons/quality-assurance-icon.svg')
   );
   this.matIconRegistry.addSvgIcon(
     'heart',
-    this.domSanitzer.bypassSecurityTrustResourceUrl('../../../assets/icons/heart-icon.svg')
+    this.domSanitzer.bypassSecurityTrustResourceUrl('assets/icons/heart-icon.svg')
   );
   this.matIconRegistry.addSvgIcon(
     'instagram',
-    this.domSanitzer.bypassSecurityTrustResourceUrl('../../../assets/icons/instagram-icon.svg')
+    this.domSanitzer.bypassSecurityTrustResourceUrl('assets/icons/instagram-icon.svg')
   );
    }
 
