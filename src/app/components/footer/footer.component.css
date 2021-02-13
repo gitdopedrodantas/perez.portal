@@ -14,6 +14,7 @@
     justify-content: space-between;
     text-align: center;
     text-align: -webkit-center;
+    padding-top: 10px;
 }
 
 .footer-information-title-and-text{
