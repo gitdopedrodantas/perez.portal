@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
-html, body { height: 100%; max-width: 100% !important; overflow-x: hidden;}
+html, body { height: 100%; max-width: 100% !important; overflow-x: hidden; overflow: visible;}
 body { margin: 0; max-width: 100%; }
 
 

@@ -1,8 +1,14 @@
-<p>vitrine works!</p>
-<mat-list>
-    <mat-list-item *ngFor="let tipo of tipoJoiasList">
-        <h1 matLine> {{tipo.id}}</h1>
-        <h1 marLine> {{tipo.descricao}}</h1>
-    </mat-list-item>
-</mat-list>
+<div class="vitrine-body">
+    <mat-list class="lista-joias">
+        <mat-list-item class="ngfor-wrapper" *ngFor="let joia of joias; let i=index">
+            <div matLine class="joia-container">
+                <img matLine class="imagem-joia" [src]="over[i] ? joia.caminhoImagemSecundaria : joia.caminhoImagemPrimaria" 
+                (mouseover)="over[i] = true"
+                (mouseout)="over[i] = false">
+                <h2 matLine class="name-joia">{{joia.nome}}</h2>
+                <h3 matLine class="price-joia">{{joia.preco.toFixed(2)}}</h3>
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>
 <router-outlet></router-outlet>

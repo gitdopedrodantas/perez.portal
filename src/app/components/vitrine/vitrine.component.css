@@ -1,0 +1,59 @@
+.vitrine-body{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.lista-joias{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.ngfor-wrapper{
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 10px;
+    height: 380px !important;
+    width: 380px !important;
+    margin: auto;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 20px !important;
+}
+
+.joia-container{
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  text-align: center;
+}
+
+.imagem-joia{
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-joia{
+    padding-top: 10px;
+    font-family: 'Alice';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px !important;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+}
+
+.price-joia{
+    padding-top: 1px !important;
+    font-family: 'Alice';
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 1.15;
+    color: #4f4f50;
+    -webkit-font-smoothing: antialiased;
+}

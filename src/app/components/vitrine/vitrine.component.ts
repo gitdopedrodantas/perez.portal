@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Joia } from 'src/shared/models/Joia.model';
 import{ VitrineService } from '../../services/vitrine.service';
 
 @Component({
@@ -9,19 +11,20 @@ import{ VitrineService } from '../../services/vitrine.service';
 export class VitrineComponent implements OnInit {
 
   constructor(
-    private _vitrineService: VitrineService
+    private _vitrineService: VitrineService,
+    private router:Router
   ) { }
 
+  over: boolean[] = [];
   tipoJoiasList:any=[];
+  joias: Joia[] = [];
 
   ngOnInit(): void {
-    this.getTipoJoias();
+    this._vitrineService.GetJoiasListByTipo(this.router.url).subscribe(res => this.joias = res.sort((a, b) => a.nome.localeCompare(b.nome)))
+    this.over = new Array(this.joias.length);
+    this.over.fill(false);
   }
 
-  getTipoJoias(){
-    this._vitrineService.GetTipoJoiasList().subscribe(response =>{
-      this.tipoJoiasList = response;
-    })
-  }
+ 
 
 }
