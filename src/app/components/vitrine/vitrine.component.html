@@ -1,9 +1,33 @@
 <div class="vitrine-body">
+    <div class="vitrine-navbar">
+        <div class="titulo-wrapper">
+            <h2 class="tipo-joia-titulo">{{nameRotaWithouSlash}}</h2>
+            <div class="border-titulo"> </div>
+        </div>
+        <div class="caracteristicas-joias-wrapper">
+            <mat-list class="caracteristicas-joias" *ngFor="let caracteristica of distinctJoiasCaracteristicas; let j=index">
+                <div matLine class="caracteristica-text-wrapper">
+                    <h4 class="caracteristica-text" 
+                    (click)="addCaracteristicaToFilter(caracteristica)" 
+                    *ngIf="!verifyIfCaracteristicaIsSelected(caracteristica)">{{caracteristica}}</h4>
+                    <h4 class="caracteristica-text-selected" 
+                    (click)="addCaracteristicaToFilter(caracteristica)" 
+                    *ngIf="verifyIfCaracteristicaIsSelected(caracteristica)">{{caracteristica}}</h4>
+                    <mat-icon svgIcon="close" *ngIf="verifyIfCaracteristicaIsSelected(caracteristica)"
+                    [@fadeInOut]
+                    class="close-icon" 
+                    (click)="removeCaracteristicaToFilter(caracteristica)"></mat-icon>
+                    <div class="border-text"> </div>
+                </div>
+            </mat-list>
+        </div>
+    </div>
     <mat-list class="lista-joias">
-        <mat-list-item class="ngfor-wrapper" *ngFor="let joia of joias; let i=index">
+        <mat-list-item class="ngfor-wrapper" *ngFor="let joia of joiasToShow; let i=index">
             <div matLine class="joia-container">
-                <img matLine class="imagem-joia" [src]="over[i] ? joia.caminhoImagemSecundaria : joia.caminhoImagemPrimaria" 
+                <img matLine class="imagem-joia" [src]="over[i] ? joia.caminhoImagemSecundaria : joia.caminhoImagemPrimaria"
                 (mouseover)="over[i] = true"
+                [@fade]
                 (mouseout)="over[i] = false">
                 <h2 matLine class="name-joia">{{joia.nome}}</h2>
                 <h3 matLine class="price-joia">{{joia.preco.toFixed(2)}}</h3>

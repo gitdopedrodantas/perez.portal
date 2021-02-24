@@ -37,7 +37,13 @@
     letter-spacing: 0.55em;
     color: #4f4f50;
     -webkit-font-smoothing: antialiased;
-  }
+    cursor: pointer;
+}
+
+.perez-logo-text:focus{
+    outline: none;
+    box-shadow: none;
+}
 
 
 .buttons{
