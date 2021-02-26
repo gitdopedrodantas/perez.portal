@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://perez-prata.herokuapp.com/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
