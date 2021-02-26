@@ -8,7 +8,7 @@ import { Joia } from 'src/shared/models/Joia.model';
 })
 export class VitrineService {
 
-  readonly ApiUrl = "https://localhost:44315/";
+  readonly ApiUrl = "https://perez-prata.herokuapp.com/";
 
   constructor(private http:HttpClient){ }
 
